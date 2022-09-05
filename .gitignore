@@ -1,1 +1,21 @@
+client-side/to-do-react/node_modules
+client-side/to-do-react/.pnp
+client-side/to-do-react/.pnp.js
 server-side/node_modules
+
+# testing
+client-side/to-do-react/coverage
+
+# production
+client-side/to-do-react/build
+
+# misc
+client-side/to-do-react/.DS_Store
+client-side/to-do-react/.env.local
+client-side/to-do-react/.env.development.local
+client-side/to-do-react/.env.test.local
+client-side/to-do-react/.env.production.local
+
+client-side/to-do-react/npm-debug.log*
+client-side/to-do-react/yarn-debug.log*
+client-side/to-do-react/yarn-error.log*

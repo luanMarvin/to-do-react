@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 
 const schema = new mongoose.Schema({
     message: String,
-    topic: String,
     completed: Boolean 
 });
 
