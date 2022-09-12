@@ -1,11 +1,26 @@
-import React from "react";
-import PostNewTask from "./PostNewTask"
+import React, {useState}from "react";
+import PostNewTask from "./PostNewTask";
 
 const PostTasks = () => {
+    const [message, setMessage] = useState('');
+    const handleChange = event => {
+        setMessage(event.target.value);
+    }
+
+    const cleanValue = () => {
+        document.querySelector("#message").value = ""
+    }
+
     return(
         <>
-            <input/>
-            <button>Adicionar</button>
+            <input 
+            type="text"
+            id="message"
+            name="message"
+            onChange={handleChange}
+            value={message}
+            />
+            <button onClick={()=>{PostNewTask(message); cleanValue();}}>Adicionar</button>
         </>
     )
 }

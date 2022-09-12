@@ -1,6 +1,4 @@
-import React from "react";
-
-const PostNewTask = () => {
+const PostNewTask = inputValue => {
     fetch("http://127.0.0.1:8024/api/tasks",
     {
         headers: {
@@ -8,7 +6,7 @@ const PostNewTask = () => {
           'Content-Type': 'application/json'
         },
         method: "POST",
-        body: JSON.stringify({message: "", completed: false})
+        body: JSON.stringify({message: inputValue, completed: false})
     })
 }
 

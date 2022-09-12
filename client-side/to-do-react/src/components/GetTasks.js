@@ -8,7 +8,7 @@ const GetTasks = () => {
         .then(data => {
             setAllTasks(data)
         })
-    },[])
+    },[GetTasks])
     if(GetTasks){
         return(
             <div className="main-task-container">
