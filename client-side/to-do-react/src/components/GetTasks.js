@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from "react";
+import DeleteTask from "./DeleteTask";
+import CompleteTask from "./CompleteTask";
+import "./GetTasks.css";
+
 
 const GetTasks = () => {
     const [GetTasks, setAllTasks] = useState();
@@ -13,13 +17,16 @@ const GetTasks = () => {
         return(
             <div className="main-task-container">
                 {
-                    GetTasks.map(task => { 
+                    GetTasks.map(task => {
+                        let classCompleted;
+                        if(task.completed){classCompleted = "task-container-true"} else {classCompleted = "task-container-false"}
                         return (
-                        <div className="task-container" id={task._id}>
+                        <div className={classCompleted} id={task._id}>
                             <h3 className="task-message">{task.message}</h3>
-                            <button className="task-button-complete">O</button>
-                            <button className="task-button-edit">E</button>
-                            <button className="task-button-rmv">X</button>
+                            <div className="button-container">
+                                <button className="task-button-complete" onClick={() => {CompleteTask(task._id)}} ></button>
+                                <button className="task-button-rmv" onClick={() => {DeleteTask(task._id)}}></button>
+                            </div>
                         </div>
                     )})
                 }

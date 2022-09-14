@@ -1,9 +1,10 @@
 import React from "react";
+import "./Header.css"
 
 const Header = () => {
     return(
         <>
-            <h1>To Do List</h1>
+            <h1 className="h1Header">TO DO LIST</h1>
         </>
     )
 }

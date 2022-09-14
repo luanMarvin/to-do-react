@@ -1,0 +1,70 @@
+.main-task-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.task-container-false{
+    margin: 20px 0 0 0;
+    width: 350px;
+    background-color: #E9C46A;
+    border-radius: 10px;
+}
+
+.task-container-true{
+    margin: 20px 0 0 0;
+    width: 350px;
+    background-color: #2A9D8F;
+    border-radius: 10px;
+}
+
+.task-container-true .task-button-complete{
+    display: none;
+}
+
+.task-container-true .task-button-rmv{
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-image: url("../images/delete.svg");
+    background-repeat: no-repeat;
+    background-position: 5px;
+    border-radius: 10px;
+    background-size: 70%;
+    margin: 0 10px 0 5px;
+    background-color: #ececec;
+}
+
+.task-message{
+    margin: 20px 0 5px 15px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.05rem;
+    max-width: 200px;
+}
+.button-container{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 5px 10px 0;
+}
+.task-button-complete{
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-image: url("../images/check.svg");
+    background-repeat: no-repeat;
+    background-position: 5px;
+    border-radius: 10px;
+    background-size: 70%;
+    background-color: #ececec;
+}
+.task-button-rmv{
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-image: url("../images/delete.svg");
+    background-repeat: no-repeat;
+    background-position: 5px;
+    border-radius: 10px;
+    background-size: 70%;
+    margin: 0 5px 0 5px;
+    background-color: #ececec;
+}
