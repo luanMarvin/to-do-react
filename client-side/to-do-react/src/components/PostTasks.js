@@ -7,11 +7,9 @@ const PostTasks = () => {
     const handleChange = event => {
         setMessage(event.target.value);
     }
-
     const cleanValue = () => {
         document.querySelector("#message").value = ""
     }
-
     return(
         <div className="form-container">
             <input 
@@ -21,7 +19,10 @@ const PostTasks = () => {
             onChange={handleChange}
             value={message}
             />
-            <button className="form-button" onClick={()=>{PostNewTask(message); cleanValue();}}></button>
+            <button 
+            className="form-button" 
+            onClick={()=>{PostNewTask(message); cleanValue();}}>
+            </button>
         </div>
     )
 }

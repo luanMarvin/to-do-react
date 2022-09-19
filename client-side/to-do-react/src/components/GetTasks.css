@@ -5,14 +5,14 @@
 }
 .task-container-false{
     margin: 20px 0 0 0;
-    width: 350px;
+    width: 450px;
     background-color: #E9C46A;
     border-radius: 10px;
 }
 
 .task-container-true{
     margin: 20px 0 0 0;
-    width: 350px;
+    width: 450px;
     background-color: #2A9D8F;
     border-radius: 10px;
 }
@@ -35,10 +35,12 @@
 }
 
 .task-message{
-    margin: 20px 0 5px 15px;
+    margin: 20px 0 25px 15px;
     font-family: 'Roboto Slab', serif;
     font-size: 1.05rem;
     max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .button-container{
     display: flex;
