@@ -1,26 +1,38 @@
 .form-container{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    margin-bottom: 90px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
 }
 #message{
-    margin: 10px 5px 0 0;
-    width: 600px;
-    height: 30px;
-    border-radius: 10px;
-    border: none;
-    text-indent: 10px;
-    font-size: 1rem;
-    font-family: 'Roboto Slab', serif;
+    color: white;
+    width: 604px;
+    height: 55px;
+    background: #1E1E1E;
+    border-radius: 16px;
+    border:none;
+    box-sizing: border-box;
+    padding: 2px 30px;
+
 }
+
+#message:focus { 
+    outline: 2px solid #43A5FF;
+}
+
+
 .form-button{
-    height: 30px;
-    width: 30px;
+    height: 45px;
+    width: 45px;
     border: none;
-    background-image: url("../images/add.svg");
+    background-image: url("../images/add-button.svg");
     background-repeat: no-repeat;
     background-position: 5px;
-    border-radius: 10px;
     background-size: 68%;
-    background-color: #ececec;
+    background-color: transparent;
+    margin-left: 18px;
 }
