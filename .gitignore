@@ -9,6 +9,8 @@ client-side/coverage
 # production
 client-side/build
 
+
+node_modules
 # misc
 client-side/.DS_Store
 client-side/.env.local
