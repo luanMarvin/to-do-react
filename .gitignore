@@ -1,21 +1,23 @@
-client-side/to-do-react/node_modules
-client-side/to-do-react/.pnp
-client-side/to-do-react/.pnp.js
+client-side/node_modules
+client-side/.pnp
+client-side/.pnp.js
 server-side/node_modules
 
 # testing
-client-side/to-do-react/coverage
+client-side/coverage
 
 # production
-client-side/to-do-react/build
+client-side/build
 
+
+node_modules
 # misc
-client-side/to-do-react/.DS_Store
-client-side/to-do-react/.env.local
-client-side/to-do-react/.env.development.local
-client-side/to-do-react/.env.test.local
-client-side/to-do-react/.env.production.local
+client-side/.DS_Store
+client-side/.env.local
+client-side/.env.development.local
+client-side/.env.test.local
+client-side/.env.production.local
 
-client-side/to-do-react/npm-debug.log*
-client-side/to-do-react/yarn-debug.log*
-client-side/to-do-react/yarn-error.log*
+client-side/npm-debug.log*
+client-side/yarn-debug.log*
+client-side/yarn-error.log*
