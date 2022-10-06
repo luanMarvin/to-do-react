@@ -25,14 +25,22 @@
 }
 
 
-.form-button{
+.form-button {
     height: 45px;
     width: 45px;
     border: none;
-    background-image: url("../images/add-button.svg");
-    background-repeat: no-repeat;
-    background-position: 5px;
-    background-size: 68%;
+    /* background-image: url("../images/add-button.svg"); */
     background-color: transparent;
     margin-left: 18px;
+    transition: .3s all;
+}
+
+.form-button svg:hover #add-btn {
+   fill: red;
+   fill: #43A5FF;
+   transition: .3s all;
+}
+
+.form-button:hover { 
+    scale: 1.2;
 }

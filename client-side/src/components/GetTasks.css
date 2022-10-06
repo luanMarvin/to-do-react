@@ -56,6 +56,8 @@
     background: #0F2612;
 }
 
+
+
 .task-container-true .task-button-complete{
     color: white;
     display: flex;
@@ -117,6 +119,7 @@
 .task-button-complete:hover{
     color: white ;
     outline:1px solid #68FF7F;
+    scale: 1.05;
 }
 
 .task-button-rmv{
@@ -141,5 +144,113 @@
 .task-button-rmv:hover { 
     background: #D20B00;
     transition: .5s all;
+    scale: 1.05;
 }
 
+.task-button-edit { 
+    color: white;
+    display: flex;
+    transition: .5s all;
+    padding: 20px 30px;
+    align-items: center;
+    gap: 16px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background: #43A5FF;
+    margin-left: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+.task-button-edit:hover { 
+    background: #2384DE;
+    scale: 1.05;
+}
+
+ /* MODAL */
+
+
+.modal-overlay { 
+    transition: .3s all;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(24, 24, 24, 0.63);
+    backdrop-filter: blur(5px);
+
+}
+
+.modal-container { 
+    top: 30%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 26px 50px;
+    gap: 25px;
+    align-items: end;
+    position: relative;
+    width: 819.07px;
+    background: #1E1E1E;
+    box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+    transform: translate(-50%, -50%);
+}
+
+.input-modal { 
+    color: white;
+    width: 100%;
+    height: 55px;
+    background: #101010;
+    border-radius: 16px;
+    border:none;
+    box-sizing: border-box;
+    padding: 2px 30px;
+}
+.input-modal:focus { 
+    outline: 2px solid #43A5FF;
+}
+
+
+.btn-close { 
+    border: none;
+    background: transparent;
+    transition: .3s all;
+
+}
+.btn-close:hover { 
+    scale: 1.2;
+}
+
+.done-btn { 
+    color: white;
+    display: flex;
+    transition: .5s all;
+    padding: 20px 30px;
+    align-items: center;
+    width: 100%;
+    max-width: 180px;
+    gap: 16px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background: #40BB3E;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.done-btn:hover { 
+    background: #0B7309;
+    
+}
+
+.ReactModal__Content .ReactModal__Content--after-open {
+    background: red;
+}
