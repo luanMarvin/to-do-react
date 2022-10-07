@@ -3,11 +3,9 @@ import DeleteTask from "./DeleteTask";
 import CompleteTask from "./CompleteTask";
 import "./GetTasks.css";
 import Modal from "react-modal";
-
+import changeTask from "./ChangeTask"
 
 Modal.setAppElement("#root");
-
-
 
 const GetTasks = () => {
     
@@ -48,10 +46,6 @@ const GetTasks = () => {
         
     },[GetTasks])
     if(GetTasks){
-
-        
-
-
         return(
             <div className="main-task-container">
                 {
@@ -81,8 +75,9 @@ const GetTasks = () => {
                                         </svg>
                                     </button>
                                         <button 
-                                            onClick={openModal}
-                                            className="task-button-edit" >
+                                            onClick={()=> openModal()}
+                                            className="task-button-edit"
+                                            >
                                             Editar
                                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M13 4.58583L20 11.5858L21 15.5858L16 20.5858M1.0625 16.6483L7.9375 23.5233M7.58751 23.5858H2.00001C1.73479 23.5858 1.48044 23.4805 1.2929 23.2929C1.10536 23.1054 1.00001 22.851 1.00001 22.5858V16.9983C0.999551 16.8685 1.02471 16.7398 1.07404 16.6197C1.12338 16.4996 1.19591 16.3904 1.28751 16.2983L16.2875 1.29833C16.3806 1.20384 16.4915 1.12881 16.6138 1.07759C16.7361 1.02638 16.8674 1 17 1C17.1326 1 17.2639 1.02638 17.3862 1.07759C17.5085 1.12881 17.6195 1.20384 17.7125 1.29833L23.2875 6.87333C23.382 6.96638 23.457 7.07729 23.5082 7.19961C23.5595 7.32193 23.5858 7.45322 23.5858 7.58583C23.5858 7.71844 23.5595 7.84972 23.5082 7.97204C23.457 8.09437 23.382 8.20528 23.2875 8.29833L8.28751 23.2983C8.19546 23.3899 8.08625 23.4625 7.96614 23.5118C7.84602 23.5611 7.71736 23.5863 7.58751 23.5858Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -106,10 +101,12 @@ const GetTasks = () => {
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.77831 23.163C-0.298501 18.0862 -0.298501 9.85501 4.77831 4.77819C9.85513 -0.298624 18.0863 -0.298623 23.1631 4.77819C28.2399 9.85501 28.2399 18.0862 23.1631 23.163C18.0863 28.2398 9.85513 28.2398 4.77831 23.163ZM6.19253 6.19241C1.89676 10.4882 1.89676 17.453 6.19253 21.7488C10.4883 26.0445 17.4531 26.0445 21.7489 21.7488C26.0446 17.453 26.0446 10.4882 21.7489 6.19241C17.4531 1.89664 10.4883 1.89664 6.19253 6.19241Z" fill="#FF0000"/>
                                     </svg>
                                 </button>
-                                <input className="input-modal" />
+                                <input className="input-modal"
+                                 />
                                 
                                 <button
                                 className="done-btn"
+                                onClick={() => changeTask(task._id)}
                                 >
                                     Concluir
                                     <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">

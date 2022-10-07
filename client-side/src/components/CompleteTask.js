@@ -21,8 +21,8 @@ function CompleteTask(taskID){
                   'Accept': 'application/json',
                   'Content-Type': 'application/json'
                 },
-              method: "PUT",
-              body: JSON.stringify({completed: true})
+                method: "PUT",
+                body: JSON.stringify({completed: true})
               }
             )
           }
